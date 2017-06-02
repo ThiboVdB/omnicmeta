@@ -24,12 +24,11 @@ function LoadTheArchive(TotalFeed)
     DisplaytheTOC(PostTitles,PostURLs);
 }
 
-function DisplaytheTOC(PostTitles,PostURLs,PostYears,PostMonths,PostDays)
+function DisplaytheTOC(PostTitles,PostURLs)
 {
     var NumberOfEntries=PostTitles.length;
     for(var EntryNum = 0; EntryNum < NumberOfEntries; EntryNum++)
     {
-	NameOfMonth = MonthNames[parseInt(PostMonths[EntryNum],10)-1]
 	document.write('<a href ="'+PostURLs[EntryNum]+'">'+PostTitles[EntryNum]+"</a><br />");
     }
 }
