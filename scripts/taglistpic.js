@@ -1,4 +1,4 @@
-function LoadTheArchive(TotalFeed) 
+function ListArchiveTagPic(TotalFeed) 
 {
     var PostTitles = new Array();
     var PostURLs = new Array();
@@ -21,7 +21,7 @@ function LoadTheArchive(TotalFeed)
 	    PostURLs.push(ThisPostURL);
 	}
     }
-    DisplaytheTOC(PostTitles,PostURLs);
+    DisplaytheTOCPic(PostTitles,PostURLs);
 }
 
   //sexy table of data here  
@@ -54,7 +54,7 @@ function DisplayImageFromUrl(MyUrl){
 
 }
 
-function DisplaytheTOC(PostTitles,PostURLs)
+function DisplaytheTOCPic(PostTitles,PostURLs)
 {
     var NumberOfEntries=PostTitles.length;
     for(var EntryNum = 0; EntryNum < NumberOfEntries; EntryNum++)
