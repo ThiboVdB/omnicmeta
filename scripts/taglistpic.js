@@ -29,7 +29,7 @@ function ListArchiveTagPic(TotalFeed)
 function DisplayImageFromUrl(MyUrl){
     var imageurl = "";
       
-    $.ajax({ url: MyUrl, success: function(data) { 
+    $.ajax({ url: MyUrl, async: false, success: function(data) { 
       //alert("success"); 
 
       var patt = /<a href="(.*?)"/g;
@@ -44,12 +44,12 @@ function DisplayImageFromUrl(MyUrl){
         if (findjpg.test(match[1]) === true || findpng.test(match[1]) === true)
         {
           imageurl = match[1];
-          alert(imageurl);
+          //alert(imageurl);
           break;
         }
       }
 
-      document.write('<!-- <img style="display:block;" width="10%" src=" ' + imageurl + ' "><br /> -->');
+      document.write('<img style="display:block;" width="100%" src=" ' + imageurl + ' "><br />');
     } });
 
 }
