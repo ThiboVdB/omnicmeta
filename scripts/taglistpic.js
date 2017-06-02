@@ -41,7 +41,7 @@ function DisplayImageFromUrl(MyUrl){
       while(match=patt.exec(data)){
 
         //alert(match[1]);
-        if (findjpg.test(match[1]) == true || findpng.test(match[1]))
+        if (findjpg.test(match[1]) === true || findpng.test(match[1]) === true)
         {
           imageurl = match[1];
           //alert("foundfirstimage");
@@ -49,7 +49,7 @@ function DisplayImageFromUrl(MyUrl){
         }
       }
 
-      document.write('<img style="display:block;" width="100%" src=" ' + imageurl + ' ">');
+      document.write('<img style="display:block;" width="100%" src=" ' + imageurl + ' "><br />');
     } });
 
 }
@@ -59,7 +59,7 @@ function DisplaytheTOCPic(PostTitles,PostURLs)
     var NumberOfEntries=PostTitles.length;
     for(var EntryNum = 0; EntryNum < NumberOfEntries; EntryNum++)
     {
-        if (EntryNum == 0)
+        if (EntryNum === 0)
         {
             //display the picture of the first image
             DisplayImageFromUrl(PostURLs[EntryNum]);
