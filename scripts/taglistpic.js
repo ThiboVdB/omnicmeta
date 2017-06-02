@@ -44,12 +44,12 @@ function DisplayImageFromUrl(MyUrl){
         if (findjpg.test(match[1]) === true || findpng.test(match[1]) === true)
         {
           imageurl = match[1];
-          //alert("foundfirstimage");
+          alert(imageurl);
           break;
         }
       }
 
-      document.write('<img style="display:block;" width="10%" src=" ' + imageurl + ' "><br />');
+      document.write('<!-- <img style="display:block;" width="10%" src=" ' + imageurl + ' "><br /> -->');
     } });
 
 }
