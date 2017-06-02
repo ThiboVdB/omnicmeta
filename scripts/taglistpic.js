@@ -49,7 +49,7 @@ function DisplayImageFromUrl(MyUrl){
         }
       }
 
-      document.write('<img style="display:block;" width="100%" src=" ' + imageurl + ' "><br />');
+      document.write('<img style="display:block;" width="10%" src=" ' + imageurl + ' "><br />');
     } });
 
 }
