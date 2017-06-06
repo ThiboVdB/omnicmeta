@@ -27,10 +27,10 @@ function ListArchiveTagDates(TotalFeed)
 	    PostURLs.push(ThisPostURL);
 	}
     }
-    DisplaytheTOCDates(PostTitles,PostURLs,PostYears,PostMonths,PostDays);
+    DisplaytheTOCPicDates(PostTitles,PostURLs,PostYears,PostMonths,PostDays);
 }
 
-function DisplayImageFromUrl(MyUrl){
+function DisplayImageFromUrl2(MyUrl){
     var imageurl = "";
       
     $.ajax({ url: MyUrl, async: false, success: function(data) { 
@@ -58,7 +58,7 @@ function DisplayImageFromUrl(MyUrl){
 
 }
 
-function DisplaytheTOCDates(PostTitles,PostURLs,PostYears,PostMonths,PostDays)
+function DisplaytheTOCPicDates(PostTitles,PostURLs,PostYears,PostMonths,PostDays)
 {
     var MonthNames=["January","February","March","April","May","June","July","August","September","October","November","December"];
     var NumberOfEntries=PostTitles.length;
@@ -67,7 +67,7 @@ function DisplaytheTOCDates(PostTitles,PostURLs,PostYears,PostMonths,PostDays)
         if (EntryNum === 0)
         {
             //display the picture of the first image
-            DisplayImageFromUrl(PostURLs[EntryNum]);
+            DisplayImageFromUrl2(PostURLs[EntryNum]);
         }   
 	NameOfMonth = MonthNames[parseInt(PostMonths[EntryNum],10)-1]
 	document.write('<a href ="'+PostURLs[EntryNum]+'">'+PostTitles[EntryNum]+"</a> ("+NameOfMonth+" "+parseInt(PostDays[EntryNum],10)+", "+PostYears[EntryNum]+")<br />");
