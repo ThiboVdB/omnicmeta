@@ -1,4 +1,4 @@
-function ListArchiveTagDates(TotalFeed) 
+function ListArchiveTagPicDates(TotalFeed) 
 {
     var PostTitles = new Array();
     var PostURLs = new Array();
