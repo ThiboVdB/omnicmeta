@@ -5,7 +5,7 @@
 
     var html_str = "";
 
-    html_str += ' <table style="float:center"><tr>';
+    html_str += ' <table align="center"><tr>';
     html_str += ' <td style="text-align:center">PC </td><td>';
     html_str += ' <a href=" http://www.omnicmeta.com/p/pc-us-winrate.html ">Winrates</a> &nbsp; &nbsp;';
     html_str += ' <a href=" http://www.omnicmeta.com/p/pc-us-usage.html ">Usage</a> &nbsp; &nbsp;';
