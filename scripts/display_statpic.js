@@ -5,15 +5,15 @@
 
     var html_str = "";
 
-    html_str += ' <table><tr>';
+    html_str += ' <table style="float:center"><tr>';
     html_str += ' <td style="text-align:center">PC </td><td>';
     html_str += ' <a href=" http://www.omnicmeta.com/p/pc-us-winrate.html ">Winrates</a> &nbsp; &nbsp;';
     html_str += ' <a href=" http://www.omnicmeta.com/p/pc-us-usage.html ">Usage</a> &nbsp; &nbsp;';
     html_str += ' <a href=" http://www.omnicmeta.com/p/pc-us-eliminations.html ">Elims</a> &nbsp; &nbsp;';
     html_str += ' <a href=" http://www.omnicmeta.com/p/pc-us-deaths.html ">Deaths</a> &nbsp; &nbsp;';
     html_str += ' <a href=" http://www.omnicmeta.com/p/pc-us-kdratio.html ">K/D Ratio</a> &nbsp; &nbsp;';
-    html_str += ' <a href=" http://www.omnicmeta.com/p/pc-us-damage.html ">Damage Done</a> &nbsp; &nbsp;';
-    html_str += ' <a href=" http://www.omnicmeta.com/p/pc-us-blocked.html ">Damage Blocked</a> &nbsp; &nbsp;';
+    html_str += ' <a href=" http://www.omnicmeta.com/p/pc-us-damage.html ">Damage</a> &nbsp; &nbsp;';
+    html_str += ' <a href=" http://www.omnicmeta.com/p/pc-us-blocked.html ">Blocked</a> &nbsp; &nbsp;';
     html_str += ' </br> ';
     html_str += ' <a href=" http://www.omnicmeta.com/p/pc-us-total-assists.html ">Total Assists</a> &nbsp; &nbsp;';    
     html_str += ' <a href=" http://www.omnicmeta.com/p/pc-us-def-assists.html ">Def. Assists</a> &nbsp; &nbsp;';  
@@ -27,8 +27,8 @@
     html_str += ' <a href=" http://www.omnicmeta.com/p/console-eliminations.html ">Elims</a> &nbsp; &nbsp;';
     html_str += ' <a href=" http://www.omnicmeta.com/p/console-deaths.html ">Deaths</a> &nbsp; &nbsp;';
     html_str += ' <a href=" http://www.omnicmeta.com/p/console-kdratio.html ">K/D Ratio</a> &nbsp; &nbsp;';
-    html_str += ' <a href=" http://www.omnicmeta.com/p/console-damage.html ">Damage Done</a> &nbsp; &nbsp;';
-    html_str += ' <a href=" http://www.omnicmeta.com/p/console-blocked.html ">Damage Blocked</a> &nbsp; &nbsp;';
+    html_str += ' <a href=" http://www.omnicmeta.com/p/console-damage.html ">Damage</a> &nbsp; &nbsp;';
+    html_str += ' <a href=" http://www.omnicmeta.com/p/console-blocked.html ">Blocked</a> &nbsp; &nbsp;';
     html_str += ' </br> ';
     html_str += ' <a href=" http://www.omnicmeta.com/p/console-total-assists.html ">Total Assists</a> &nbsp; &nbsp;';    
     html_str += ' <a href=" http://www.omnicmeta.com/p/console-def-assists.html ">Def. Assists</a> &nbsp; &nbsp;';  
