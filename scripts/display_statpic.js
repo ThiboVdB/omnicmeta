@@ -15,6 +15,7 @@
     html_str += ' <a href=" http://www.omnicmeta.com/p/pc-us-damage.html ">Damage</a> &nbsp; &nbsp;';
     html_str += ' <a href=" http://www.omnicmeta.com/p/pc-us-blocked.html ">Blocked</a> &nbsp; &nbsp;';
     html_str += ' </br> ';
+    html_str += ' <a href=" http://www.omnicmeta.com/p/pc-us-healing.html ">Healing</a> &nbsp; &nbsp;';        
     html_str += ' <a href=" http://www.omnicmeta.com/p/pc-us-total-assists.html ">Total Assists</a> &nbsp; &nbsp;';    
     html_str += ' <a href=" http://www.omnicmeta.com/p/pc-us-def-assists.html ">Def. Assists</a> &nbsp; &nbsp;';  
     html_str += ' <a href=" http://www.omnicmeta.com/p/pc-us-off-assists.html ">Off. Assists</a> &nbsp; &nbsp;';  
@@ -30,6 +31,7 @@
     html_str += ' <a href=" http://www.omnicmeta.com/p/console-damage.html ">Damage</a> &nbsp; &nbsp;';
     html_str += ' <a href=" http://www.omnicmeta.com/p/console-blocked.html ">Blocked</a> &nbsp; &nbsp;';
     html_str += ' </br> ';
+    html_str += ' <a href=" http://www.omnicmeta.com/p/console-healing.html ">Healing</a> &nbsp; &nbsp;';        
     html_str += ' <a href=" http://www.omnicmeta.com/p/console-total-assists.html ">Total Assists</a> &nbsp; &nbsp;';    
     html_str += ' <a href=" http://www.omnicmeta.com/p/console-def-assists.html ">Def. Assists</a> &nbsp; &nbsp;';  
     html_str += ' <a href=" http://www.omnicmeta.com/p/console-off-assists.html ">Off. Assists</a> &nbsp; &nbsp;';  
