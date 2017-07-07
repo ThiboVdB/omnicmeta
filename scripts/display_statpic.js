@@ -14,6 +14,7 @@
     html_str += ' <a href=" http://www.omnicmeta.com/p/us_pc_kdratio.html ">K/D Ratio</a> &nbsp; &nbsp;';
     html_str += ' <a href=" http://www.omnicmeta.com/p/us_pc_damage.html ">Damage Done</a> &nbsp; &nbsp;';
     html_str += ' <a href=" http://www.omnicmeta.com/p/us_pc_blocked.html ">Damage Blocked</a> &nbsp; &nbsp;';
+    html_str += ' </br> ';
     html_str += ' <a href=" http://www.omnicmeta.com/p/us_pc_total_assists.html ">Total Assists</a> &nbsp; &nbsp;';    
     html_str += ' <a href=" http://www.omnicmeta.com/p/us_pc_def_assists.html ">Def. Assists</a> &nbsp; &nbsp;';  
     html_str += ' <a href=" http://www.omnicmeta.com/p/us_pc_off_assists.html ">Off. Assists</a> &nbsp; &nbsp;';  
@@ -28,6 +29,7 @@
     html_str += ' <a href=" http://www.omnicmeta.com/p/console_kdratio.html ">K/D Ratio</a> &nbsp; &nbsp;';
     html_str += ' <a href=" http://www.omnicmeta.com/p/console_damage.html ">Damage Done</a> &nbsp; &nbsp;';
     html_str += ' <a href=" http://www.omnicmeta.com/p/console_blocked.html ">Damage Blocked</a> &nbsp; &nbsp;';
+    html_str += ' </br> ';
     html_str += ' <a href=" http://www.omnicmeta.com/p/console_total_assists.html ">Total Assists</a> &nbsp; &nbsp;';    
     html_str += ' <a href=" http://www.omnicmeta.com/p/console_def_assists.html ">Def. Assists</a> &nbsp; &nbsp;';  
     html_str += ' <a href=" http://www.omnicmeta.com/p/console_off_assists.html ">Off. Assists</a> &nbsp; &nbsp;';  
