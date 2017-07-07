@@ -16,12 +16,12 @@
     html_str += ' <a href=" http://www.omnicmeta.com/p/pc-us-blocked.html ">Blocked</a> &nbsp; &nbsp;';
     html_str += ' </br> ';
     html_str += ' <a href=" http://www.omnicmeta.com/p/pc-us-healing.html ">Healing</a> &nbsp; &nbsp;';        
-    html_str += ' <a href=" http://www.omnicmeta.com/p/pc-us-total-assists.html ">Total Assists</a> &nbsp; &nbsp;';    
+    html_str += ' <a href=" http://www.omnicmeta.com/p/pc-us-total-assists.html ">Tot. Assists</a> &nbsp; &nbsp;';    
     html_str += ' <a href=" http://www.omnicmeta.com/p/pc-us-def-assists.html ">Def. Assists</a> &nbsp; &nbsp;';  
     html_str += ' <a href=" http://www.omnicmeta.com/p/pc-us-off-assists.html ">Off. Assists</a> &nbsp; &nbsp;';  
     html_str += ' <a href=" http://www.omnicmeta.com/p/pc-us-accuracy.html ">Accuracy</a> &nbsp; &nbsp;';  
     html_str += ' <a href=" http://www.omnicmeta.com/p/pc-us-crit-accuracy.html ">Crit Accuracy</a> &nbsp; &nbsp;';         
-    html_str += ' </td></tr><tr>';
+    html_str += ' </td></tr><tr><td> &nbsp;<td></tr><tr>';
     html_str += ' <td style="text-align:center"> &nbsp; &nbsp; &nbsp; Console &nbsp; &nbsp; &nbsp;</td><td>';
     html_str += ' <a href=" http://www.omnicmeta.com/p/console-winrate.html ">Winrates</a> &nbsp; &nbsp;';
     html_str += ' <a href=" http://www.omnicmeta.com/p/console-usage.html ">Usage</a> &nbsp; &nbsp;';
@@ -32,7 +32,7 @@
     html_str += ' <a href=" http://www.omnicmeta.com/p/console-blocked.html ">Blocked</a> &nbsp; &nbsp;';
     html_str += ' </br> ';
     html_str += ' <a href=" http://www.omnicmeta.com/p/console-healing.html ">Healing</a> &nbsp; &nbsp;';        
-    html_str += ' <a href=" http://www.omnicmeta.com/p/console-total-assists.html ">Total Assists</a> &nbsp; &nbsp;';    
+    html_str += ' <a href=" http://www.omnicmeta.com/p/console-total-assists.html ">Tot. Assists</a> &nbsp; &nbsp;';    
     html_str += ' <a href=" http://www.omnicmeta.com/p/console-def-assists.html ">Def. Assists</a> &nbsp; &nbsp;';  
     html_str += ' <a href=" http://www.omnicmeta.com/p/console-off-assists.html ">Off. Assists</a> &nbsp; &nbsp;';  
     html_str += ' <a href=" http://www.omnicmeta.com/p/console-accuracy.html ">Accuracy</a> &nbsp; &nbsp;';  
