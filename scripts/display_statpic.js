@@ -20,7 +20,7 @@
     html_str += ' <a href=" http://www.omnicmeta.com/p/us_pc_accuracy.html ">Accuracy</a> &nbsp; &nbsp;';  
     html_str += ' <a href=" http://www.omnicmeta.com/p/us_pc_crit_accuracy.html ">Crit Accuracy</a> &nbsp; &nbsp;';         
     html_str += ' </td></tr><tr>';
-    html_str += ' <td style="text-align:right"> &nbsp; &nbsp; &nbsp; Console &nbsp; &nbsp; &nbsp;</td><td>';
+    html_str += ' <td style="text-align:center"> &nbsp; &nbsp; &nbsp; Console &nbsp; &nbsp; &nbsp;</td><td>';
     html_str += ' <a href=" http://www.omnicmeta.com/p/console_winrate.html ">Winrates</a> &nbsp; &nbsp;';
     html_str += ' <a href=" http://www.omnicmeta.com/p/console_usage.html ">Usage</a> &nbsp; &nbsp;';
     html_str += ' <a href=" http://www.omnicmeta.com/p/console_eliminations.html ">Elims</a> &nbsp; &nbsp;';
