@@ -48,8 +48,7 @@ function DisplayImageFromUrl(MyUrl){
           break;
         }
       }
-
-      document.write('<img style="display:block;" width="90%" src=" ' + imageurl + ' "><br />');
+      document.write('<a href="' + imageurl + 'imageanchor="1"> <img style="display:block;" width="90%" src=" ' + imageurl + ' "></a><br />');
     } });
 
 }
