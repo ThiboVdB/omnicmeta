@@ -113,7 +113,7 @@
                 stat_data.push("http://rawgit.com/theswitchfox/omnicmeta/master/img/hero/reaper.png"); 
                 stat_data.push("#272725");                            
                 stat_ids.push("eliminations", "all_damage_done", "final_blows", "self_healing", "death_blossom_kills", "deaths");
-                stat_strings.push("Eliminations", "Damage", "Final Blows", "Self Healing", "Death Blossom Kills", "Deaths");        
+                stat_strings.push("Eliminations", "Damage", "Final Blows", "Self Healing", "Blossom Kills", "Deaths");        
                break;  
             case "soldier76":
                 stat_data.push("Soldier: 76");
@@ -121,7 +121,7 @@
                 stat_data.push("http://rawgit.com/theswitchfox/omnicmeta/master/img/hero/soldier.png");  
                 stat_data.push("#5870b6");                           
                 stat_ids.push("eliminations", "all_damage_done", "critical_hits", "helix_rocket_kills", "tactical_visor_kills", "deaths");
-                stat_strings.push("Eliminations", "Damage", "Critical Hits", "Helix Rocket Kills", "Tactical Visor Kills", "Deaths"); 
+                stat_strings.push("Eliminations", "Damage", "Critical Hits", "Helix Rocket Kills", "Visor Kills", "Deaths"); 
      
                break;
             case "sombra":
@@ -138,7 +138,7 @@
                 stat_data.push("http://rawgit.com/theswitchfox/omnicmeta/master/img/hero/tracer.png");     
                 stat_data.push("#f8911b");                        
                 stat_ids.push("eliminations", "hero_damage_done", "final_blows", "critical_hits", "pulse_bomb_kills", "deaths");
-                stat_strings.push("Eliminations", "Hero Damage", "Final Blows", "Critical Hits", "Pulse Bomb Kills", "Deaths");           
+                stat_strings.push("Eliminations", "Hero Damage", "Final Blows", "Critical Hits", "Bomb Kills", "Deaths");           
                break;  
             case "bastion":
                 stat_data.push("Bastion");
@@ -154,7 +154,7 @@
                 stat_data.push("http://rawgit.com/theswitchfox/omnicmeta/master/img/hero/hanzo.png"); 
                 stat_data.push("#938848");                            
                 stat_ids.push("eliminations", "hero_damage_done", "final_blows", "scatter_arrow_kills", "dragonstrike_kills", "deaths");
-                stat_strings.push("Eliminations", "Hero Damage", "Final Blows", "Scatter Arrow Kills", "Dragonstrike Kills", "Deaths");         
+                stat_strings.push("Eliminations", "Hero Damage", "Final Blows", "Scatter Kills", "Dragonstrike Kills", "Deaths");         
                break;  
             case "junkrat":
                 stat_data.push("Junkrat");
@@ -194,7 +194,7 @@
                 stat_data.push("http://rawgit.com/theswitchfox/omnicmeta/master/img/hero/dva.png");   
                 stat_data.push("#ff80d0");                          
                 stat_ids.push("eliminations", "all_damage_done", "damage_blocked", "final_blows", "self_destruct_kills", "deaths");
-                stat_strings.push("Eliminations", "Damage", "Blocked", "Final Blows", "Self-Destruct Kills", "Deaths");         
+                stat_strings.push("Eliminations", "Damage", "Blocked", "Final Blows", "Destruct Kills", "Deaths");         
                break;  
             case "reinhardt":
                 stat_data.push("Reinhardt");
@@ -226,7 +226,7 @@
                 stat_data.push("http://rawgit.com/theswitchfox/omnicmeta/master/img/hero/zarya.png");  
                 stat_data.push("#f471a8");                           
                 stat_ids.push("eliminations", "all_damage_done", "projected_barriers_applied", "high_energy_kills", "graviton_surge_kills", "deaths");
-                stat_strings.push("Eliminations", "Damage", "Projected Barriers", "High Energy Kills", "Graviton Surge Kills", "Deaths");            
+                stat_strings.push("Eliminations", "Damage", "Proj. Barriers", "High Energy Kills", "Graviton Kills", "Deaths");            
                break;           
             case "ana":
                 stat_data.push("Ana");
@@ -475,10 +475,10 @@
         //get SR, get total W/L
         html_str += ' <div> <table> <span> <tr>';
         html_str += ' <td valign="middle"> <img style="display:block; " height="96" width="96" src=" ' + avatar_url  + ' "> </td> ';
-        html_str += ' <td valign="middle" > <h2>' + username.replace("-", "#") + '</h2> </td>';
+        html_str += ' <td valign="middle" > <h4>' + username.replace("-", "#") + '</h4> </td>';
         html_str += ' <td valign="middle" > &nbsp; &nbsp; &nbsp; &nbsp; </td>';
         html_str += ' <td> <div style="background-image:url(\'' + rank_border_url + '\'); display: table-cell; width:96px; height: 96px; background-size: contain; background-repeat: no-repeat; text-align: center;">';
-        html_str += ' <div style=" width:96px; height: 48px; vertical-align: middle; "> </br> </br> ' + rank_level + '</div>';
+        html_str += ' <div style=" width:96px; height: 48px; vertical-align: middle; "> </br> ' + rank_level + '</div>';
         html_str += ' <div style="background-image:url(\'' + rank_stars_url + '\');width:96px; height: 48px;background-size: contain;"></div>'
         html_str += ' </div> </td>';
         //alert (html_str);
@@ -537,7 +537,7 @@
             
             
             //draw hero pic, name, W/L/T
-            html_str += ' <div align="left" style="background-color: lightgrey; float: left; padding: 12px; max-width: 1000px; background-clip:content-box;"> </br>'
+            html_str += ' <div align="left" style="background-color: black; float: left; padding: 12px; max-width: 1000px; background-clip:content-box;"> </br>'
             html_str += ' <table> <span> <tr>';
             html_str += ' <td valign="middle" style=" width: 24px;"> </td> ';
             html_str += ' <td valign="middle" style=" width: 64px;"> <img style="display:block; background-color:' + color + ';" height="50" width="56" src=" ' + imageurl + ' "> </td> ';
@@ -545,7 +545,7 @@
             html_str += ' <td valign="middle" style=" width: 150px; text-align: center; "> <font size="5">' + hero_data[7] + 'W - ' + hero_data[9] + 'L </font> </br> Match Record </td> ' ;
             html_str += ' <td valign="middle" style=" width: 150px; text-align: center; "> <font size="5">' + winrate.toFixed(0)+'% </font> </br> Winrate </td> ' ;            
             html_str += ' <td valign="middle" style=" width: 150px; text-align: center; "> <font size="5"> ' + time_played + ' Minutes </font> </br> Time Played </td> ' ;
-            html_str += ' <td valign="middle" style=" width: 150px; text-align: center; "> <font size="5">' + percent_overall.toFixed(0) + '% </font> </br> Hero Ranking (' + tier_name+ ') </td> ' ;
+            html_str += ' <td valign="middle" style=" width: 150px; text-align: center; "> <font size="5">' + percent_overall.toFixed(0) + '% </font> </br> Hero Ranking </td> ' ; // (' + tier_name+ ') </td> ' ;
             html_str += ' </tr> </span> </table> </br>' ;
 
             html_str += ' <table> <span> <tr> ' ;
@@ -596,7 +596,7 @@
                 
                 html_str += ' <td valign="top" style=" width: 150px; text-align: center;">  <h4> ' + hero_data[i]+ ' </h4>';
                 html_str += print_data + ' / min </br>';
-                html_str += ' <table style="margin-left: auto; margin-right: auto;"> <tr> <td style="width:100px;  border-style: solid;  border-width: 1px; border-color: black"> <table> <tr> <td style="height:5px; width:' + percent_tier + 'px ; background-color:'+ color + ';"> </td> </tr> </table> </td> </tr> </table> ';
+                html_str += ' <table style="margin-left: auto; margin-right: auto;"> <tr> <td style="width:100px;  border-style: solid;  border-width: 1px; border-color: white"> <table> <tr> <td style="height:5px; width:' + percent_tier + 'px ; background-color:'+ color + ';"> </td> </tr> </table> </td> </tr> </table> ';
                 html_str += percent_tier.toFixed(0) + '% ' + tier_name + ' </br>';                
                 html_str += '('+percent_main.toFixed(0) + '% Mains) </br>';                
                 html_str += ' </td> ' ;
