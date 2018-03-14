@@ -473,9 +473,9 @@
         }
 
         //get SR, get total W/L
-        html_str += ' <div> </br> <table> <span> <tr>';
+        html_str += ' <div style="padding: 12px;"> </br> <table> <span> <tr>';
         html_str += ' <td valign="middle"> <img style="display:block; " height="96" width="96" src=" ' + avatar_url  + ' "> </td> ';
-        html_str += ' <td valign="middle" > <h3 class="post-title" style="color: #ffffff;"> ' + username.replace("-", "#") + '</h3> </td>';
+        html_str += ' <td valign="middle" style="text-align: left; width: 350px;  > <h3 class="post-title" style="color: #ffffff;"> ' + username.replace("-", "#") + '</h3> </td>';
         html_str += ' <td valign="middle" > &nbsp; &nbsp; &nbsp; &nbsp; </td>';
         html_str += ' <td> <div style="background-image:url(\'' + rank_border_url + '\'); display: table-cell; width:96px; height: 96px; background-size: contain; background-repeat: no-repeat; text-align: center;">';
         html_str += ' <div style="line-height:175%; width:96px; height: 48px; "> </br> <font size="4">' + rank_level + '</font></div>';
@@ -484,10 +484,13 @@
         //alert (html_str);
         if (player_sr != null)
         {
-            html_str += ' <td valign="middle" style="text-align: center;"> <img style="display:block; border: 0px; box-shadow: 0px 0px 0px; background:transparent;" height="64" width="64" src=" ' +  rank_url  + ' "> </td> ' ;
+            html_str += ' <td valign="middle" style="text-align: center; width: 200px; "> <img style="display:block; border: 0px; box-shadow: 0px 0px 0px; background:transparent;" height="64" width="64" src=" ' +  rank_url  + ' ">' ;
             html_str += ' </br>' + player_sr + ' SR </td>';
         }
-        html_str += ' <td valign="middle" style=" width: 300px; text-align: center;"> ' + player_wins + 'W / ' + player_losses + 'L / ' + player_ties + 'D </br> ' + winrate.toFixed(0)+'% Winrate </td> ' ;
+        else {
+            
+        }
+        html_str += ' <td valign="middle" style=" width: 200px; text-align: center;"> ' + player_wins + 'W / ' + player_losses + 'L / ' + player_ties + 'D </br> ' + winrate.toFixed(0)+'% Winrate </td> ' ;
         html_str += ' </tr> </span> </table> </br> </div>' ;
 
 
