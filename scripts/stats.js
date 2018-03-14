@@ -388,10 +388,9 @@
         //get SR, get total W/L
         temp_str += ' <div> </br> <table> <span> <tr>';
         temp_str += ' <td valign="middle"> <img style="display:block; " height="96" width="96" src=" ' + temp_avatar_url  + ' "> </td> ';
-        temp_str += ' <td valign="middle" > <h3 class="post-title" style="color: #ffffff;"> ' + username.replace("-", "#") + '</h3> </td>';
-        temp_str += ' <td valign="middle" > &nbsp; &nbsp; &nbsp; &nbsp; </td>';
-        temp_str += ' <td valign="middle"> 0 SR </td>';
-        temp_str += ' <td valign="middle" style=" width: 300px; text-align: center;"> W / L / D : % Winrate </td> ' ;
+        temp_str += ' <td valign="middle" style=" width: 350px; text-align: left;"> <h3 class="post-title" style="color: #ffffff;"> ' + username.replace("-", "#") + '</h3> </td>';
+        temp_str += ' <td valign="middle" style=" width: 200px; text-align: center;"> NO SR </td>';
+        temp_str += ' <td valign="middle" style=" width: 200px; text-align: center;"> W / L / D : % Winrate </td> ' ;
         temp_str += ' </tr> </span> </table> </br> </div>' ;
             
     document.getElementById("PlayerStats").innerHTML = temp_str;
@@ -475,8 +474,7 @@
         //get SR, get total W/L
         html_str += ' <div style="padding: 12px;"> </br> <table> <span> <tr>';
         html_str += ' <td valign="middle"> <img style="display:block; " height="96" width="96" src=" ' + avatar_url  + ' "> </td> ';
-        html_str += ' <td valign="middle" style="text-align: left; width: 350px;  > <h3 class="post-title" style="color: #ffffff;"> ' + username.replace("-", "#") + '</h3> </td>';
-        html_str += ' <td valign="middle" > &nbsp; &nbsp; &nbsp; &nbsp; </td>';
+        html_str += ' <td valign="middle" style="text-align: left; width: 350px;" > <h3 class="post-title" style="color: #ffffff;"> ' + username.replace("-", "#") + '</h3> </td>';
         html_str += ' <td> <div style="background-image:url(\'' + rank_border_url + '\'); display: table-cell; width:96px; height: 96px; background-size: contain; background-repeat: no-repeat; text-align: center;">';
         html_str += ' <div style="line-height:175%; width:96px; height: 48px; "> </br> <font size="4">' + rank_level + '</font></div>';
         html_str += ' <div style="background-image:url(\'' + rank_stars_url + '\');width:96px; height: 48px;background-size: contain;"></div>'
@@ -488,7 +486,7 @@
             html_str += ' </br>' + player_sr + ' SR </td>';
         }
         else {
-            
+            html_str += ' <td valign="middle" style="text-align: center; width: 200px; "> NO SR</td>' ;            
         }
         html_str += ' <td valign="middle" style=" width: 200px; text-align: center;"> ' + player_wins + 'W / ' + player_losses + 'L / ' + player_ties + 'D </br> ' + winrate.toFixed(0)+'% Winrate </td> ' ;
         html_str += ' </tr> </span> </table> </br> </div>' ;
