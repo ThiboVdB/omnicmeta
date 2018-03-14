@@ -386,13 +386,13 @@
     var temp_avatar_url = "https://d1u1mce87gyfbn.cloudfront.net/game/unlocks/0x02500000000002F9.png";
     var temp_str = "";
         //get SR, get total W/L
-        temp_str += ' <div> <table> <span> <tr>';
+        temp_str += ' <div> </br> <table> <span> <tr>';
         temp_str += ' <td valign="middle"> <img style="display:block; " height="96" width="96" src=" ' + temp_avatar_url  + ' "> </td> ';
         temp_str += ' <td valign="middle" > <h3 class="post-title" style="color: #ffffff;"> ' + username.replace("-", "#") + '</h3> </td>';
         temp_str += ' <td valign="middle" > &nbsp; &nbsp; &nbsp; &nbsp; </td>';
         temp_str += ' <td valign="middle"> 0 SR </td>';
         temp_str += ' <td valign="middle" style=" width: 300px; text-align: center;"> W / L / D : % Winrate </td> ' ;
-        temp_str += ' </tr> </span> </table> </div>' ;
+        temp_str += ' </tr> </span> </table> </br> </div>' ;
             
     document.getElementById("PlayerStats").innerHTML = temp_str;
             
@@ -473,7 +473,7 @@
         }
 
         //get SR, get total W/L
-        html_str += ' <div> <table> <span> <tr>';
+        html_str += ' <div> </br> <table> <span> <tr>';
         html_str += ' <td valign="middle"> <img style="display:block; " height="96" width="96" src=" ' + avatar_url  + ' "> </td> ';
         html_str += ' <td valign="middle" > <h3 class="post-title" style="color: #ffffff;"> ' + username.replace("-", "#") + '</h3> </td>';
         html_str += ' <td valign="middle" > &nbsp; &nbsp; &nbsp; &nbsp; </td>';
@@ -488,7 +488,7 @@
             html_str += ' </br>' + player_sr + ' SR </td>';
         }
         html_str += ' <td valign="middle" style=" width: 300px; text-align: center;"> ' + player_wins + 'W / ' + player_losses + 'L / ' + player_ties + 'D </br> ' + winrate.toFixed(0)+'% Winrate </td> ' ;
-        html_str += ' </tr> </span> </table> </div>' ;
+        html_str += ' </tr> </span> </table> </br> </div>' ;
 
 
         hero_data_array = get_hero_stats(result);
