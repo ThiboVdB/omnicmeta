@@ -370,7 +370,7 @@
     //var username = document.getElementById("battlenet_tag").value;
     var username = getAllUrlParams().username;
     
-    if (!username || username.length === 0) return; //check for null value
+    if (!username || username.length === 0 || username == null) return; //check for null value
 
     var split_username = username; 
     var fetch_url = "https://owapi.net/api/v3/u/" + split_username + "/blob";
@@ -680,7 +680,7 @@
         if (!username || username.length === 0) return; //check for null value
 
         var split_username = username.split("#");
-        var new_url = "player_stats.html?username=" + split_username[0] + "-" + split_username[1];
+        var new_url = "http://www.omnicmeta.com/p/playerstats.html?username=" + split_username[0] + "-" + split_username[1];
 
         window.open(new_url,"_self")
         //alert("running calc script");
@@ -690,7 +690,10 @@
   
     function build_button(fetching){
         var username = getAllUrlParams().username;
-    
+        if (username == null)
+        {
+          username = "Battletag";
+        }
         var html_str = "";
         html_str += ' <form action="" id="nothing"> <br />';
         html_str += ' Enter battle.net tag: <input id="battlenet_tag" type="text" value="' + username.replace("-", "#")+ '"/>';
