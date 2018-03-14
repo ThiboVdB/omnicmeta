@@ -680,7 +680,7 @@
         if (!username || username.length === 0) return; //check for null value
 
         var split_username = username.split("#");
-        var new_url = "test_players_stats.html?username=" + split_username[0] + "-" + split_username[1];
+        var new_url = "player_stats.html?username=" + split_username[0] + "-" + split_username[1];
 
         window.open(new_url,"_self")
         //alert("running calc script");
@@ -697,7 +697,7 @@
         html_str += ' <input id="button" onclick="open_user_page()" type="button" value="Fetch Stats!"/> ';
         if (fetching == true)
         {
-            html_str += ' <input type="image" src="ajax-loader.gif" /> Fetching Career Profile... Please Wait A Few Seconds... ';        
+            html_str += ' <input type="image" src="http://rawgit.com/theswitchfox/omnicmeta/master/scripts/ajax-loader.gif" /> Fetching Career Profile... Please Wait A Few Seconds... ';        
         }
         html_str += ' </form>';
 
