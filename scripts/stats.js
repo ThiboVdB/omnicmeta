@@ -484,10 +484,10 @@
         //alert (html_str);
         if (player_sr != null)
         {
-            html_str += ' <td valign="middle" style="text-align: center;"> <img style="display:block; border: 0px; box-shadow: 0px 0px 0px; background:transparent;" height="96" width="96" src=" ' +  rank_url  + ' "> </td> ' ;
-            html_str += ' <td valign="middle"> ' + player_sr + ' SR </td>';
+            html_str += ' <td valign="middle" style="text-align: center;"> <img style="display:block; border: 0px; box-shadow: 0px 0px 0px; background:transparent;" height="64" width="64" src=" ' +  rank_url  + ' "> </td> ' ;
+            html_str += ' </br>' + player_sr + ' SR </td>';
         }
-        html_str += ' <td valign="middle" style=" width: 300px; text-align: center;"> ' + player_wins + 'W / ' + player_losses + 'L / ' + player_ties + 'D : ' + winrate.toFixed(0)+'% Winrate </td> ' ;
+        html_str += ' <td valign="middle" style=" width: 300px; text-align: center;"> ' + player_wins + 'W / ' + player_losses + 'L / ' + player_ties + 'D </br> ' + winrate.toFixed(0)+'% Winrate </td> ' ;
         html_str += ' </tr> </span> </table> </div>' ;
 
 
