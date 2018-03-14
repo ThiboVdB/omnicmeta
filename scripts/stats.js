@@ -482,8 +482,8 @@
         //alert (html_str);
         if (player_sr != null)
         {
-            html_str += ' <td valign="middle" style="text-align: center; width: 200px; "> <img style="display:block; border: 0px; box-shadow: 0px 0px 0px; background:transparent;" height="64" width="64" src=" ' +  rank_url  + ' ">' ;
-            html_str += ' </br>' + player_sr + ' SR </td>';
+            html_str += ' <td valign="middle" style="text-align: center; width: 200px; "> <div style="background-image:url(\'' + rank_url + '\'); display: table-cell; width:96px; height: 96px; background-size: contain; background-repeat: no-repeat; text-align: bottom;">';
+            html_str += '<div style=" width:96px; height: 96px; display: table-cell; text-align: center; vertical-align: bottom; "> ' + player_sr + ' SR </div></div></td>';
         }
         else {
             html_str += ' <td valign="middle" style="text-align: center; width: 200px; "> NO SR</td>' ;            
