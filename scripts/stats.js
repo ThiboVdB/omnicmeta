@@ -381,7 +381,7 @@
     var hero_data_array = [];
     var html_str = "";
 
-    build_button(true);
+    build_button(1);
     
     var temp_avatar_url = "https://d1u1mce87gyfbn.cloudfront.net/game/unlocks/0x02500000000002F9.png";
     var temp_str = "";
@@ -472,7 +472,7 @@
         }
 
         //get SR, get total W/L
-        html_str += ' <div style="padding: 12px;"> </br> <table> <span> <tr>';
+        html_str += ' <div> </br> <table> <span> <tr>';
         html_str += ' <td valign="middle"> <img style="display:block; " height="96" width="96" src=" ' + avatar_url  + ' "> </td> ';
         html_str += ' <td valign="middle" style="text-align: left; width: 450px;" > <h3 class="post-title" style="color: #ffffff;"> ' + username.replace("-", "#") + '</h3> </td>';
         html_str += ' <td> <div style="background-image:url(\'' + rank_border_url + '\'); display: table-cell; width:96px; height: 96px; background-size: contain; background-repeat: no-repeat; text-align: center;">';
@@ -496,10 +496,11 @@
 
         
     }).fail( function(d, textStatus, error) {
+        build_button(2);
         console.error("getJSON failed, status: " + textStatus + ", error: "+error)
     })
     ).then(function() {
-        build_button(false);
+        build_button(0);
         //document.getElementById("ow_api_status").innerHTML = "";
 
         for(var hero = 0; hero < hero_data_array.length; hero++)
@@ -538,7 +539,7 @@
             
             
             //draw hero pic, name, W/L/T
-            html_str += ' <div align="left" style="background-color: #292929; float: left; padding: 12px; max-width: 1000px; background-clip:content-box;"> </br>'
+            html_str += ' <div align="left" style="background-color: #292929; float: left; max-width: 1000px; background-clip:content-box;"> </br>'
             html_str += ' <table> <span> <tr>';
             html_str += ' <td valign="middle" style=" width: 24px;"> </td> ';
             html_str += ' <td valign="middle" style=" width: 64px;"> <img style="display:block; background-color:' + color + ';" height="50" width="56" src=" ' + imageurl + ' "> </td> ';
@@ -691,18 +692,19 @@
   
     function build_button(fetching){
         var username = getAllUrlParams().username;
-        if (username == null)
-        {
-          username = "Battletag";
-        }
+    
         var html_str = "";
         html_str += ' <form action="" id="nothing"> <br />';
         html_str += ' Enter battle.net tag: <input id="battlenet_tag" type="text" value="' + username.replace("-", "#")+ '"/>';
         html_str += ' <input id="button" onclick="open_user_page()" type="button" value="Fetch Stats!"/> ';
-        if (fetching == true)
+        if (fetching == 1)
         {
-            html_str += ' <input type="image" src="http://rawgit.com/theswitchfox/omnicmeta/master/scripts/ajax-loader.gif" /> Fetching Career Profile... Please Wait A Few Seconds... ';        
+            html_str += ' <input type="image" src="ajax-loader.gif" /> Fetching Career Profile... Please Wait A Few Seconds... ';        
         }
+        if (fetching == 2)
+        {
+            html_str += ' Error: BattleTag Not Found... Please Try Again';        
+        }        
         html_str += ' </form>';
 
         document.getElementById("SearchButton").innerHTML = html_str; 
