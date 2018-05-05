@@ -4380,7 +4380,7 @@ function GetValueTier(tier, hero, stat, value){
   {
     retval = 1;
   }
-  else if (value >= array[bucket.length-1]){
+  else if (value >= array[bucket_percentile.length-1]){
     retval = 99;
   }
   else {
@@ -8780,7 +8780,7 @@ function GetValueMain(tier, hero, stat, value){
   {
     retval = 1;
   }
-  else if (value >= array[bucket.length-1]){
+  else if (value >= array[bucket_percentile.length-1]){
     retval = 99;
   }
   else {
@@ -9508,7 +9508,7 @@ function GetValueOverall(tier, hero, value){
   {
     retval = 1;
   }
-  else if (value >= array[bucket.length-1]){
+  else if (value >= array[bucket_percentile.length-1]){
     retval = 99;
   }
   else {
