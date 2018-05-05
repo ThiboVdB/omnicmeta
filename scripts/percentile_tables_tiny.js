@@ -4384,7 +4384,7 @@ function GetValueTier(tier, hero, stat, value){
     retval = 99;
   }
   else {
-    int bucket = 0;
+    var bucket = 0;
     while (bucket < bucket_percentile.length-1)
     {
       if (value >= array[bucket] && value < array[bucket+1] ) {
@@ -4394,7 +4394,7 @@ function GetValueTier(tier, hero, stat, value){
         bucket++;
       }
     }
-    double slope = (bucket_percentile[bucket+1]-bucket_percentile[bucket])/(array[bucket+1]-array[bucket]);
+    var slope = (bucket_percentile[bucket+1]-bucket_percentile[bucket])/(array[bucket+1]-array[bucket]);
     retval = slope * (value - array[bucket]) + bucket_percentile[bucket];
   }
   return retval;
@@ -8784,7 +8784,7 @@ function GetValueMain(tier, hero, stat, value){
     retval = 99;
   }
   else {
-    int bucket = 0;
+    var bucket = 0;
     while (bucket < bucket_percentile.length-1)
     {
       if (value >= array[bucket] && value < array[bucket+1] ) {
@@ -8794,7 +8794,7 @@ function GetValueMain(tier, hero, stat, value){
         bucket++;
       }
     }
-    double slope = (bucket_percentile[bucket+1]-bucket_percentile[bucket])/(array[bucket+1]-array[bucket]);
+    var slope = (bucket_percentile[bucket+1]-bucket_percentile[bucket])/(array[bucket+1]-array[bucket]);
     retval = slope * (value - array[bucket]) + bucket_percentile[bucket];
   }
   return retval;
@@ -9512,7 +9512,7 @@ function GetValueOverall(tier, hero, value){
     retval = 99;
   }
   else {
-    int bucket = 0;
+    var bucket = 0;
     while (bucket < bucket_percentile.length-1)
     {
       if (value >= array[bucket] && value < array[bucket+1] ) {
@@ -9522,7 +9522,7 @@ function GetValueOverall(tier, hero, value){
         bucket++;
       }
     }
-    double slope = (bucket_percentile[bucket+1]-bucket_percentile[bucket])/(array[bucket+1]-array[bucket]);
+    var slope = (bucket_percentile[bucket+1]-bucket_percentile[bucket])/(array[bucket+1]-array[bucket]);
     retval = slope * (value - array[bucket]) + bucket_percentile[bucket];
   }
   return retval;
