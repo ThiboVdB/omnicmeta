@@ -68,12 +68,12 @@ function DisplaytheTOCPicDates(PostTitles,PostURLs,PostYears,PostMonths,PostDays
 
         if (EntryNum < 5)
         {
-	    document.write('("+NameOfMonth+" "+parseInt(PostDays[EntryNum],10)+", "+PostYears[EntryNum]+")<br />');            //display the picture of the first image
+	    document.write('('+NameOfMonth+' '+parseInt(PostDays[EntryNum],10)+', '+PostYears[EntryNum]+')<br />');            //display the picture of the first image
             DisplayImageFromUrl2(PostURLs[EntryNum]);
-	    document.write('<a href ="'+PostURLs[EntryNum]+'">'+PostTitles[EntryNum]+"</a><br />');
+	    document.write('<a href ="'+PostURLs[EntryNum]+'">'+PostTitles[EntryNum]+'</a><br />');
         }
         else {
-	    document.write('<a href ="'+PostURLs[EntryNum]+'">'+PostTitles[EntryNum]+"</a> ("+NameOfMonth+" "+parseInt(PostDays[EntryNum],10)+", "+PostYears[EntryNum]+") <br />');
+	    document.write('<a href ="'+PostURLs[EntryNum]+'">'+PostTitles[EntryNum]+'</a> ('+NameOfMonth+' '+parseInt(PostDays[EntryNum],10)+', '+PostYears[EntryNum]+') <br />');
         }   
 
 
