@@ -53,7 +53,7 @@ function DisplayImageFromUrl2(MyUrl){
         }
       }
 
-      document.write('<a href="' + MyUrl + '" imageanchor="1"> <img style="display:block;" width="90%" src=" ' + imageurl + ' "></a>');
+      document.write('<a href="' + MyUrl + '" imageanchor="1"> <img style="display:block;" width="100%" src=" ' + imageurl + ' "></a>');
     } });
 
 }
@@ -68,12 +68,12 @@ function DisplaytheTOCPicDates(PostTitles,PostURLs,PostYears,PostMonths,PostDays
 
         if (EntryNum < 3)
         {
-	    document.write('<h2 align="left"> ('+NameOfMonth+' '+parseInt(PostDays[EntryNum],10)+', '+PostYears[EntryNum]+')</h2><br />');            //display the picture of the first image
+	    document.write('<font style="font-family: 'bignoodletooobliqueitalic'" align="left"> ('+NameOfMonth+' '+parseInt(PostDays[EntryNum],10)+', '+PostYears[EntryNum]+')</font><br />');            //display the picture of the first image
             DisplayImageFromUrl2(PostURLs[EntryNum]);
 	    document.write('<a href ="'+PostURLs[EntryNum]+'">'+PostTitles[EntryNum]+'</a><br /> <br />');
         }
         else {
-	    document.write('<a href ="'+PostURLs[EntryNum]+'">'+PostTitles[EntryNum]+'</a> ('+NameOfMonth+' '+parseInt(PostDays[EntryNum],10)+', '+PostYears[EntryNum]+') <br />');
+	    document.write('<br /><a href ="'+PostURLs[EntryNum]+'">'+PostTitles[EntryNum]+'</a> ('+NameOfMonth+' '+parseInt(PostDays[EntryNum],10)+', '+PostYears[EntryNum]+') ');
         }   
 
 
