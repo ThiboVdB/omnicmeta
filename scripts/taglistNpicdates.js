@@ -68,7 +68,7 @@ function DisplaytheTOCPicDates(PostTitles,PostURLs,PostYears,PostMonths,PostDays
 
         if (EntryNum < 3)
         {
-	    document.write('<font size=4; style="font-family: \'bignoodletooobliqueitalic\'; text-align:left;"> ('+NameOfMonth+' '+parseInt(PostDays[EntryNum],10)+', '+PostYears[EntryNum]+')</font><br />');            //display the picture of the first image
+	    document.write('<font> '+NameOfMonth+' '+parseInt(PostDays[EntryNum],10)+', '+PostYears[EntryNum]+'</font><br />');            //display the picture of the first image
             DisplayImageFromUrl2(PostURLs[EntryNum]);
 	    document.write('<a href ="'+PostURLs[EntryNum]+'">'+PostTitles[EntryNum]+'</a><br /> <br />');
         }
